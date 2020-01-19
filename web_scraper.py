@@ -35,7 +35,7 @@ if __name__ == '__main__':
       gd = tr.select('td:nth-of-type(9)')[0].get_text().strip()
       pts = tr.select('td:nth-of-type(10)')[0].get_text().strip()
 
-      print(pos, team, played, win, draw, lose, gf, ga, gd, pts)
+      #print(pos, team, played, win, draw, lose, gf, ga, gd, pts)
       writer.writerow([pos, team, played, win, draw, lose, gf, ga, gd, pts])
 
       teams.append(team)

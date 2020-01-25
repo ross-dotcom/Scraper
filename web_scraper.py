@@ -10,7 +10,7 @@ if __name__ == '__main__':
    url = 'https://www.soccerstats.com/latest.asp?league=england' #URL
    response = requests.get(url) #RESPONSE
    if response.status_code in [200]:
-      print('It worked!')
+      print('Server found.')
    bs = BeautifulSoup(response.text, 'html.parser') #CONTENT
    
    output = open('table.csv', 'w')
